@@ -1,7 +1,22 @@
-/* #content{
-    background-image: url('/src/sign.jpg');
-    width: 1000px;
-    height: 1000px;
+.heading {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 48px;
 
+    font-size: 30px;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 150px;
 
-} */
+}
+.times {
+    font-weight: 600;
+    font-size: 24px;
+}
+.location{
+    font-weight: 600;
+    font-size: 20px;
+}
