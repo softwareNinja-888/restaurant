@@ -9,7 +9,6 @@ const createHome = ()=>{
     information()
 }
 
-
 const contactPage = ()=>{
     contact()
 }

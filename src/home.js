@@ -1,4 +1,4 @@
-import odinImage from "./pizza.jpg";
+import odinImage from "./sign.jpg";
 
 // CREATE IMGAE: 
 
