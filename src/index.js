@@ -16,3 +16,7 @@ const contactPage = ()=>{
 
 
 menu()
+menu()
+menu()
+menu()
+menu()

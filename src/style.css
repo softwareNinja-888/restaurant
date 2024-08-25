@@ -113,6 +113,11 @@
     grid-template-columns: repeat(3,1fr);
     justify-items: center;
 }
+.pCon{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
 
 @media (max-width:750px) {
     .foodCon{
