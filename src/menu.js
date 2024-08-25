@@ -41,7 +41,7 @@ const menu = (function(){
 
         h1.textContent = `${foodItem}`
         img.src = image
-        span.textContent = "Price:"
+        span.textContent = "Price: "
         p.textContent = `${price}`
 
         btn1.textContent = "Place Order"

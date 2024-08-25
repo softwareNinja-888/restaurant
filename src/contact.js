@@ -1,13 +1,8 @@
-const elements = (function (){
-    const div = document.getElementById("content")
-
-    return {div}
-})()
+import {elements} from "./menu.js"
 
 const contact = (function(){
 
     return function(){
-        console.log('runs');
         const contactDiv = document.createElement("div")
         contactDiv.classList.add("contacts")
 

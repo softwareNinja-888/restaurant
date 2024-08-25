@@ -1,12 +1,6 @@
 import odinImage from "./sign.jpg";
+import {elements} from "./menu.js"
 
-// CREATE IMGAE: 
-
-const elements = (function (){
-    const div = document.getElementById("content")
-
-    return {div}
-})()
 
 const displayImg = (function(){
     return function (){
