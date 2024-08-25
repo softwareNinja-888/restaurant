@@ -69,4 +69,4 @@ const menu = (function(){
 })()
 
 
-export { menu }
+export { menu, elements}

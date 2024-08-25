@@ -2,6 +2,7 @@ import './style.css'
 import {displayImg,heading,information} from './home.js'
 import {contact} from './contact.js'
 import {menu} from './menu.js'
+import {elements} from "./menu.js"
 
 import pizzaImg from './pizza.jpg'
 import famousDish from './dish.jpg'
@@ -14,6 +15,13 @@ import VegPizza from './vegPizza.jpg'
 
 
 import { head } from 'lodash'
+// GET BUTTONS
+
+const homeBtn = document.querySelector(".home")
+const contactBtn = document.querySelector(".contact")
+const menuBtn = document.querySelector(".menu")
+
+// FUNCTION TO DISPLAY PAGES
 
 const createHome = ()=>{
     heading()
@@ -36,4 +44,29 @@ const menuPage = ()=>{
     menu("Rolls", rolls,"40")
 
 }
-menuPage()
+
+// EVENTLISTENRES
+
+createHome()
+menuBtn.addEventListener("click",()=>{
+    while(elements.div.firstChild){
+        elements.div.removeChild(elements.div.lastChild)
+    }
+    while(elements.foodCon.firstChild){
+        elements.foodCon.removeChild(elements.foodCon.lastChild)
+    }
+
+    menuPage()
+})
+homeBtn.addEventListener("click",()=>{
+    while(elements.div.firstChild){
+        elements.div.removeChild(elements.div.lastChild)
+    }
+    createHome()
+})
+contactBtn.addEventListener("click",()=>{
+    while(elements.div.firstChild){
+        elements.div.removeChild(elements.div.lastChild)
+    }
+    contactPage()
+})

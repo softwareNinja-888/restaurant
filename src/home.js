@@ -81,4 +81,4 @@ const information = (function (){
     }
 })()
 
-export { displayImg,heading,information }
+export { displayImg,heading,information,elements }
