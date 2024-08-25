@@ -1,5 +1,3 @@
-import pizzaImg from './pizza.jpg'
-
 const elements = (function (){
     const div = document.getElementById("content")
     const foodCon = document.createElement("div")
@@ -11,7 +9,7 @@ const elements = (function (){
 
 const menu = (function(){
 
-    return function(foodItem){
+    return function(foodItem,image,price){
 
         // CREATION OF ELEMENTS:
 
@@ -41,10 +39,10 @@ const menu = (function(){
 
         // ADD TEXTCONTENT/CONTENT
 
-        h1.textContent = "Pizza"
-        img.src = pizzaImg
+        h1.textContent = `${foodItem}`
+        img.src = image
         span.textContent = "Price:"
-        p.textContent = "120"
+        p.textContent = `${price}`
 
         btn1.textContent = "Place Order"
         btn2.textContent = "Specials"
