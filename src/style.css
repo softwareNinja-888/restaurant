@@ -67,3 +67,57 @@
     font-size: 20px;
     font-weight: 600;
 }
+
+/* MENU  */
+
+.food{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #38bdf8;
+    border-radius: 10px;
+
+    max-width: 300px;
+    gap: 8px;
+    margin: 12px;
+    padding: 12px;
+}
+
+.dish {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+.price{
+    font-weight: 600;
+}
+
+.orderBtn{
+    display: flex;
+    gap: 30px;
+}
+.buttonO {
+    border: 1px solid #38bdf8;
+    padding: 6px;
+    border-radius: 6px;
+    color: #38bdf8;
+
+    min-width: 120px;
+    transition: transform .5s ease-in-out;
+}
+.buttonO:hover{
+    transform: scale(1.1);
+}
+
+.foodCon{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+}
+
+@media (max-width:750px) {
+    .foodCon{
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
